@@ -7,6 +7,9 @@
 # AS.11
 # Midterm Pot Pourri
 
+from graphics import *
+import random
+
 # Program 1
 weekMessage = { "Monday" : "The Way Get Started Is To Quit Talking And Begin Doing.",
 				"Tuesday" : "The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.",
@@ -44,3 +47,69 @@ def printDecendingNumbers():
 printDecendingNumbers()
 
 # Program 4
+colors = ["Red",
+          "Green",
+          "Blue",
+          "Purple",
+          "Pink",
+          "Yellow",
+          "Orange",
+          "Brown",
+          "Gray",
+		  "Black",
+		  "White"]
+
+win = GraphWin("Loops", 500, 500, autoflush=False)
+
+def main():
+	rectangles = []
+	for i in range(6):
+		for j in range(6):
+			rect = Rectangle(Point(100 + i * 50, 100 + j * 50), Point(150 + i * 50, 150 + j * 50))
+			rect.setFill(random.choice(colors))
+			rectangles.append(rect)
+	for rect in rectangles:
+		rect.draw(win)
+		
+	win.getMouse()
+	win.close()
+
+main()
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
