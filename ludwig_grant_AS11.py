@@ -31,3 +31,16 @@ def areaCalcRect(length, width):
 print(areaCalcRect(5, 10))
 
 # Program 3
+numberList = [5, 4, 3, 2, 1]
+
+def printDecendingNumbers():
+	for _ in range(len(numberList)):
+		printString = ""
+		for num in numberList:
+			printString += str(num) + " "
+		print(printString)
+		del numberList[0]
+		
+printDecendingNumbers()
+
+# Program 4
