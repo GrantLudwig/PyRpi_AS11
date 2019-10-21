@@ -23,3 +23,11 @@ def encourageMe(day):
 		return "You entered not a day of the week"
 		
 print(encourageMe("Friday"))
+
+# Program 2
+def areaCalcRect(length, width):
+	return length * width
+	
+print(areaCalcRect(5, 10))
+
+# Program 3
