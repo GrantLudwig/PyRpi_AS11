@@ -116,16 +116,3 @@ print("Program 5")
 print("---------")
 print("Hello there.:", stringReverse("Hello there."))
 print("General Kenobi!:", stringReverse("General Kenobi!"))
-
-
-
-
-
-
-
-
-
-
-
-
-
